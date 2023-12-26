@@ -9,13 +9,34 @@ import numpy as np
 import pandas as pd
 import json as js # création du dictionnaire de cartes
 
+with open(~/Dropbox/Perso/Projet_cardshuffle/pool.json, 'r') as pool:
+    catalogue = js.load(pool)
 
-def add_card(ajouter):
-    ajouter =
+def add_card(self, ajouter):
+    new_card = str(input("Indiquez le nom de la carte"))
+    if new_card in catalogue
+        print("La carte existe déjà")
+    else:
+        donnees_cartes = {"nom_carte":"édition", "nom_carte":"prix", "nom_carte":"propriétaire", "nom_carte":"quantité"}
+        nom_carte = bool(input("Validez le nom de la carte"))
+        if nom_carte = False
+            return
+        édition = str(input("Indiquez l'édition de la carte"))
+        prix = float(input("Indiquez le prix de la carte"))
+        propriétaire = str(input("Indiquez le nom du propriétaire"))
+            if propriétaire in seller = True
+
+            else:
+                print("Le propriétaire n'est pas dans la base")
+        quantité = int(input("Indiquez la quantité de cette carte en vente"))
+
+with open(pool, 'w') as catalogue
+    js.dump(donnees_cartes, pool, indent=1)
 
 def remove_card():
 
 def add_seller():
+    seller = {"nom_vendeur":"à_vendre", "solde"}
 
 def check_seller():
 
